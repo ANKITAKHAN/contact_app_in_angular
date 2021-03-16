@@ -1,0 +1,71 @@
+h3{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: cursive;
+    text-transform: uppercase;
+    padding-top: 10px;
+    padding-left: 90px;
+    color: rgb(11, 82, 141); 
+}
+#sortheading{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: cursive;
+    text-transform: uppercase;
+    padding-top: 10px;
+    padding-left: 100px;
+    color: rgb(11, 82, 141); 
+    text-align:center;
+}
+.col-14
+{
+    width:max-content;
+}
+.list-group-item-heading
+{
+    text-transform: uppercase;
+}
+
+// ----------------------------------
+.botn{
+    border-radius: 10px;
+    height: 30px;
+    width: 150px;
+    font: 1em sans-serif;
+    padding-top: 5px;
+    font-weight: bold;
+    background-color: rgb(71, 183, 187);
+    color: azure;
+    text-decoration: none;
+  }
+  .butn{
+    border-radius: 10px;
+    height: 40px;
+    width: 130px;
+    font: 1em sans-serif;
+    padding-top: 5px;
+    font-weight: bold;
+    background-color: rgb(157, 220, 223);
+    color: rgb(16, 101, 150);
+    text-decoration: none;
+    text-align:center;
+    text-transform: uppercase;
+  }
+  .butn:hover,.botn:hover{
+    background-color:rgb(31, 97, 128);
+    color: azure;
+  }
+
+  #movebtn
+  {
+      padding-left: 148px;
+  }
+  #moveinp{
+     width: 370px;
+     padding-left: 80px;
+     text-align: center;
+  }
+  #inp{
+      text-align: center;
+  }
+  .invalid-feedback{display:block;}

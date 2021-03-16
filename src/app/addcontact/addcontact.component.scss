@@ -1,0 +1,40 @@
+.btn{
+    border-radius: 10px;
+    height: 30px;
+    width: 150px;
+    font: 1em sans-serif;
+    padding-top: 5px;
+    font-weight: bold;
+    background-color: rgb(71, 183, 187);
+    color: azure;
+  }
+.btn{
+    text-decoration: none;
+    color: azure;
+  }
+ .btn:hover{
+        background-color:rgb(31, 97, 128);
+        color: azure;
+ } 
+  #movebtn
+  {
+      padding-left: 148px;
+  }
+  #moveinp{
+     width: 370px;
+     padding-left: 80px;
+     text-align: center;
+  }
+  h3{
+      font-size: 30px;
+      font-weight: bold;
+      font-family: cursive;
+      text-transform: uppercase;
+      padding-top: 10px;
+      padding-left: 30px;
+      color: rgb(11, 82, 141); 
+  }
+  #inp{
+      text-align: center;
+  }
+  .invalid-feedback{display:block;}

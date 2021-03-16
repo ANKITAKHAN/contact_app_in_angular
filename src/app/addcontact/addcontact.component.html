@@ -1,0 +1,45 @@
+<h3>Enter contact details</h3><br>
+<div class="container">
+    <div class="form-group">
+			<form #contactForm="ngForm" (ngSubmit)="add(contactForm); contactForm.resetForm();">
+                <div id="moveinp">
+                <input id="inp" ngModel #contactname="ngModel" type="text" class="form-control" name="name" minlength="2" maxlength="30" placeholder="Enter the name" required/><br>
+                
+                <div *ngIf="contactname.errors" >  
+                    <div *ngIf="contactname.errors.required && (contactname.dirty || contactname.touched)"  [ngClass] = "'alert alert-warning'">  
+                        This field is required!
+                    </div>
+                    <div *ngIf="(contactname.errors.maxlength || contactname.errors.minlength) && (contactname.dirty || contactname.touched)"  [ngClass] = "'alert alert-danger'">  
+                      Name can be between 2-30 characters.  
+                    </div>   
+                </div>
+            
+                <input id="inp"  ngModel [pattern]="mobNumberPattern" #contactphone="ngModel" type="tel" class="form-control" name="phone" minlength="10" maxlength="10" placeholder="Enter the phone" required/><br>
+                
+                <div *ngIf="contactphone.errors" > 
+                    <div *ngIf="contactphone.errors.required && (contactphone.dirty || contactphone.touched)"  [ngClass] = "'alert alert-warning'">  
+                         This field is required!
+                    </div> 
+                    <div *ngIf="contactphone.errors.pattern && (contactphone.dirty || contactphone.touched)"  [ngClass] = "'alert alert-danger'">  
+                      Enter 10 digit valid phone number.  
+                    </div>   
+                </div> 
+                
+                <input id="inp"  ngModel [pattern]="emailPattern" #contactemail="ngModel" type="email" class="form-control" name="email" placeholder="Enter the email id" required/><br>
+                
+                <div *ngIf="contactemail.errors" > 
+                    <div *ngIf="contactemail.errors.required && (contactemail.dirty || contactemail.touched)"  [ngClass] = "'alert alert-warning'">  
+                         This field is required!
+                    </div> 
+                    <div *ngIf="contactemail.errors.pattern && (contactemail.dirty || contactemail.touched)"  [ngClass] = "'alert alert-danger'">  
+                      Enter valid email id.  
+                    </div>   
+                </div>
+                
+                </div>
+                <div id="movebtn" class="form-group">
+                <button class="btn" type="submit" [disabled]="contactForm.invalid">SUBMIT</button>
+                </div>
+            </form>
+    </div>        
+</div>
